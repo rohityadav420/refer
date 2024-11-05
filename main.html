@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earning Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #D2B48C;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .nav-links a:hover {
+            color: #f0a500;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle .bar {
+            height: 3px;
+            width: 25px;
+            background: #fff;
+            margin: 3px 0;
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .button-container {
+            padding: 15px;
+        }
+
+        .earn-money-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        .earn-money-btn:hover {
+            background: #45a049;
+        }
+
+        .caret {
+            margin-left: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background: #333;
+                width: 100%;
+                padding: 10px 0;
+                z-index: 10;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+        }
+
+        .mainimg img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Easy Earn</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#terms">Terms and Conditions</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <div class="mainimg">
+        <img src="4182079.jpg" alt="Main Image">
+    </div>
+
+    <div class="box-container">
+        <!-- Box 1 -->
+        <div class="box">
+            <img src="https://shorturl.at/rt04D" alt="UpStox">
+            <div class="button-container">
+                <a href="upstox.html">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="box">
+            <img src="https://shorturl.at/FA8KY" alt="Winzo">
+            <div class="button-container">
+                <a href="winzo.html">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="box">
+            <img src="https://shorturl.at/Y5VGt" alt="Sample Image">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="box">
+            <img src="https://shorturl.at/pWrW3" alt="Network Error">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="box">
+            <img src="https://shorturl.at/LBxrh" alt="Sample Image">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="box">
+            <img src="https://shorturl.at/gXcPc" alt="Sample Image">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 7 -->
+        <div class="box">
+            <img src="https://shorturl.at/zLYdx" alt="Sample Image">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 8 -->
+        <div class="box">
+            <img src="https://shorturl.at/kKp8V" alt="Sample Image">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 9 -->
+        <div class="box">
+            <img src="https://shorturl.at/k2xKh" alt="Sample Image">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Box 10 -->
+        <div class="box">
+            <img src="https://via.placeholder.com/300" alt="Sample Image">
+            <div class="button-container">
+                <a href="https://www.example.com">
+                    <button class="earn-money-btn">Click Here <span class="caret">▼</span></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Add more boxes as needed -->
+    </div>
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
